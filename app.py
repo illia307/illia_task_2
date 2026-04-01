@@ -32,7 +32,6 @@ map_data['size'] = map_data['PM2_5'] * 50
 
 # Виводимо карту (колір точок червоний, розмір залежить від рівня PM2.5)
 st.map(map_data, latitude='lat', longitude='lon', size='size', color='#ff4b4b')
-st.caption(f"*Дані на карті актуальні станом на: {latest_date.strftime('%Y-%m-%d')}*")
 
 st.divider()
 
